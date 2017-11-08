@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release' //https://github.com/novoda/bintray-release
+android {
+  compileSdkVersion 26
+
+  lintOptions {
+    abortOnError false
+  }
+
+  defaultConfig {
+    minSdkVersion 19
+    targetSdkVersion 26
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  tasks.whenTaskAdded { task ->
+    if (task.name.contains("UnitTest") || task.name.contains("AndroidTest")) {
+      task.enabled = false
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+}
+publish {
+  userOrg = 'batuer'
+  groupId = 'com.gusi.neontv'
+  artifactId = 'NeonTv'
+  publishVersion = '1.0.0'
+  desc = 'Neon TextView'
+  website = 'https://github.com/batuer/HeadLine'
+}

@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">NeonTextView</string>
+  <string-array name="colors">
+    <item>#c77e07</item>
+    <item>#0517be</item>
+    <item>#FFFF00FF</item>
+    <item>#FF000000</item>
+    <item>#FFFF0000</item>
+  </string-array>
+</resources>

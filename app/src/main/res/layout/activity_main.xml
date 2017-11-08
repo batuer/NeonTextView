@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000"
+    tools:context="gusi.neontextview.MainActivity">
+
+  <com.gusi.neontv.NeonTextView
+      android:id="@+id/tv1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:background="#fff"
+      android:gravity="center_horizontal"
+      android:text="Hello World!\n 你好!"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:open_neon="true" />
+
+
+  <com.gusi.neontv.NeonTextView
+      android:id="@+id/tv3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:background="#fff"
+      android:gravity="center_horizontal"
+      android:text="Hello World!\n 你好!"
+      app:layout_constraintLeft_toRightOf="@+id/tv1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:neon_orientation="vertical"
+      app:open_neon="true" />
+
+  <com.gusi.neontv.NeonTextView
+      android:id="@+id/tv2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:background="#fff"
+      android:gravity="center_horizontal"
+      android:text="Hello World!\n 你好!"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv1"
+      app:open_neon="false" />
+
+  <com.gusi.neontv.NeonTextView
+      android:id="@+id/tv4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:background="#fff"
+      android:gravity="center_horizontal"
+      android:text="Hello World!\n 你好!"
+      app:layout_constraintLeft_toRightOf="@+id/tv2"
+      app:layout_constraintTop_toBottomOf="@+id/tv1"
+      app:neon_orientation="horizontal"
+      app:open_neon="false" />
+
+  <com.gusi.neontv.NeonTextView
+      android:id="@+id/tv5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:background="#fff"
+      android:gravity="center_horizontal"
+      android:text="Hello World!\n 你好!"
+      app:colors="@array/colors"
+      app:open_neon="true"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv2"
+      />
+
+
+</android.support.constraint.ConstraintLayout>
