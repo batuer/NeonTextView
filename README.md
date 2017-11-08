@@ -1,6 +1,6 @@
 # NeonTextView
 霓虹灯、彩虹效果 TextView 
-compile 'com.gusi.neontv:NeonTv:1.0.0'
+#####  compile 'com.gusi.neontv:NeonTv:1.0.0'
 #####  
          <com.gusi.neontv.NeonTextView
             android:id="@+id/tv3"
@@ -17,5 +17,6 @@ compile 'com.gusi.neontv:NeonTv:1.0.0'
             app:neon_orientation="horizontal"  //霓虹灯效果下变化方向
             app:open_neon="false" //霓虹灯效果 
             />
-            
+ 
+![image](https://github.com/batuer/NeonTextView/blob/master/img/2017-11-08-01mzimg.gif)
         
