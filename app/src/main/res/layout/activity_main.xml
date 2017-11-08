@@ -15,7 +15,7 @@
       android:padding="10dp"
       android:background="#fff"
       android:gravity="center_horizontal"
-      android:text="Hello World!\n 你好!"
+      android:text="Hello World!\n 你好!你好!"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       app:open_neon="true" />
@@ -29,11 +29,12 @@
       android:padding="10dp"
       android:background="#fff"
       android:gravity="center_horizontal"
-      android:text="Hello World!\n 你好!"
+      android:text="Hello World!\n 你好!你好!"
+      app:exchange_time="500"
       app:layout_constraintLeft_toRightOf="@+id/tv1"
       app:layout_constraintTop_toTopOf="parent"
-      app:neon_orientation="vertical"
-      app:open_neon="true" />
+      app:neon_orientation="horizontal"
+      app:open_neon="false" />
 
   <com.gusi.neontv.NeonTextView
       android:id="@+id/tv2"
@@ -43,10 +44,11 @@
       android:padding="10dp"
       android:background="#fff"
       android:gravity="center_horizontal"
-      android:text="Hello World!\n 你好!"
+      android:text="Hello World!\n 你好!你好!"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/tv1"
-      app:open_neon="false" />
+      app:neon_orientation="vertical"
+      app:open_neon="true" />
 
   <com.gusi.neontv.NeonTextView
       android:id="@+id/tv4"
@@ -56,10 +58,10 @@
       android:padding="10dp"
       android:background="#fff"
       android:gravity="center_horizontal"
-      android:text="Hello World!\n 你好!"
+      android:text="Hello World!\n 你好!你好!"
       app:layout_constraintLeft_toRightOf="@+id/tv2"
       app:layout_constraintTop_toBottomOf="@+id/tv1"
-      app:neon_orientation="horizontal"
+      app:neon_orientation="vertical"
       app:open_neon="false" />
 
   <com.gusi.neontv.NeonTextView
@@ -70,12 +72,11 @@
       android:padding="10dp"
       android:background="#fff"
       android:gravity="center_horizontal"
-      android:text="Hello World!\n 你好!"
+      android:text="Hello World!\n 你好!你好!"
       app:colors="@array/colors"
-      app:open_neon="true"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/tv2"
-      />
+      app:open_neon="true" />
 
 
 </android.support.constraint.ConstraintLayout>
