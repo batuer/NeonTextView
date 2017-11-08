@@ -37,5 +37,5 @@ publish {
   artifactId = 'NeonTv'
   publishVersion = '1.0.0'
   desc = 'Neon TextView'
-  website = 'https://github.com/batuer/HeadLine'
+  website = 'https://github.com/batuer/NeonTextView'
 }
